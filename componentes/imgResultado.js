@@ -9,7 +9,10 @@ import {
 export default props=>{
     return(
         <View style={estilos.bloco}>
-  
+            <Image
+                source={require('../assets/bomba.png')}
+                style={estilos.bomba}
+            />
         </View>
     )
 }
@@ -17,11 +20,10 @@ export default props=>{
 const estilos = StyleSheet.create({
     bloco:{
         marginBottom: 10,
+        justifyContent:'center',
+        alignItems:'center',
     },
-    txt:{
-        borderColor: '#000',
-        borderWidth:2,
-        borderRadius: 7,
-        fontSize: 20
+    bomba:{
+        resizeMode: 'stretch',
     }
 });

@@ -9,7 +9,7 @@ import {
 export default props=>{
     return(
         <View style={estilos.bloco}>
-            <Text>Melhor combustível: </Text>
+            <Text>Melhor combustível: {props.resultado}</Text>
  
         </View>
     )

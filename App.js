@@ -57,8 +57,8 @@ export default function App(){
       <Gasolina aoModificar={setarGasolina}/>
       <Etanol aoModificar={setarEtanol}/>
       <Calcular aoPressionar={calcular}/>
-      <Resultado/>
-      <ImagemResultado/>
+      <Resultado resultado={resultado}/>
+      <ImagemResultado comb={resultado.charAt(0)}/>
     </SafeAreaView>
   )
 }
